@@ -1,0 +1,13 @@
+{% macro post_macro(author, date_post, email, title, text) -%}
+
+<ul>
+  <div class="card" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">{{ title | upper }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ text }}</h6>
+      <p class="card-text">{{ author }} - {{ email }}</p>
+    </div>
+  </div>
+</ul>
+
+{%- endmacro %}

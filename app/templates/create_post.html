@@ -1,0 +1,63 @@
+{% extends 'base.html' %} {% block post %}
+
+<form action="/post" method="post">
+  <div class="form-group col-sm-7">
+    <label for="exampleFormControlInput1">Título</label>
+    <input
+      type="text"
+      class="form-control"
+      name="title"
+      id="title"
+      placeholder="Título"
+    />
+  </div>
+
+  <div class="form-group col-sm-3">
+    <label for="exampleFormControlInput1">Data</label>
+    <input
+      type="date"
+      class="form-control"
+      name="date_post"
+      id="date_post"
+      placeholder="Data"
+    />
+  </div>
+
+  <div class="form-group col-sm-7">
+      <label for="exampleFormControlTextarea1">Conteúdo</label>
+      <textarea
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+        name="text"
+        id="text"
+      ></textarea>
+  </div>
+
+  <div class="form-group col-sm-7">
+    <label for="exampleFormControlInput1">Autor</label>
+    <input
+      type="text"
+      class="form-control"
+      name="author"
+      id="title"
+      placeholder="Autor"
+    />
+  </div>
+
+  <div class="form-group col-sm-7">
+    <label for="exampleFormControlInput1">E-mail </label>
+    <input
+      type="email"
+      class="form-control"
+      id="exampleFormControlInput1"
+      name="e-mail"
+      id="e-mail"
+      placeholder="name@example.com"
+    />
+  </div>
+  <div>
+    <button type="submit" class="btn btn-primary col-sm-3 mb-2 ">Enviar</button>
+  </div>
+</form>
+{% endblock post %}

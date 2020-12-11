@@ -1,0 +1,8 @@
+{% from "macros/post.html" import post_macro %}
+{% extends 'base.html' %} 
+{% block post %}
+
+{{post_macro(single_post.author, single_post.date_post, single_post.email, single_post.title, single_post.text)}}
+
+
+{% endblock post %}

@@ -1,0 +1,11 @@
+{% from "macros/post.html" import post_macro %}
+
+{% extends 'base.html' %} 
+{% block home %}
+
+{% for post in all_posts %}
+  {{post_macro(post.author, post.date_post, post.email, post.title, post.text[0:20])}}
+
+{% endfor %}
+
+{% endblock home %}
